@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="OkizsEnHML5QcXhOJr0vcu" LanguageVersion="2020.1.3.147" Version="0.128">
+  <NugetDependency Id="Jn5zgUJnkicPMhQZSgpRbr" Location="VL.CoreLib" Version="2020.1.3" />
+  <Patch Id="HkaPYN5AjeOMVDv4NrJ5QC">
+    <Canvas Id="Kmqi0uP0xtKL7VYLIGxakX" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="GOvC6B680qoLm1XsDnqcs6">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="OQHbuM43GxEPRqS5qn53IC">
+        <Canvas Id="Upk4P8dBpXNQYhlMluAjPR" CanvasType="Group" />
+        <Patch Id="Oh06H0A4ztVN8ZS8Cq0yCO" Name="Create" />
+        <Patch Id="CtsLQLsW0RtP6NkvJtldpM" Name="Update" />
+        <!--
+
+    ************************  ************************
+
+-->
+        <ProcessDefinition Id="L0g861yIRylPXCfHVKBWEZ">
+          <Fragment Id="Vmn6dBRV99NO59wngXa9ZZ" Patch="Oh06H0A4ztVN8ZS8Cq0yCO" Enabled="true" />
+          <Fragment Id="EbzF7zLzTdDOEykmNIWVfp" Patch="CtsLQLsW0RtP6NkvJtldpM" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="CCYGgbfjaOLN02DKoc1ELZ" Location="VL.Skia" Version="2020.1.3" />
+</Document>
