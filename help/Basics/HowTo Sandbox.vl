@@ -14,20 +14,182 @@
         <FullNameCategoryReference ID="Primitive" />
       </p:NodeReference>
       <Patch Id="OQHbuM43GxEPRqS5qn53IC">
-        <Canvas Id="Upk4P8dBpXNQYhlMluAjPR" CanvasType="Group" />
+        <Canvas Id="Upk4P8dBpXNQYhlMluAjPR" CanvasType="Group">
+          <Node Bounds="123,340,226,19" Id="U52GGCbhaQTMcFpMmbQOjM">
+            <p:NodeReference LastCategoryFullName="IO.FileSystemWatcher" LastSymbolSource="VL.FsNotify.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="FileSystemWatcher (Reactive)" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="HNKI3PaCVGSLJtn6SMQR1p" Name="Path" Kind="InputPin" />
+            <Pin Id="T8ceTIZt5GHM1OqFNIPypk" Name="Filter" Kind="InputPin" />
+            <Pin Id="HxYzkhH737wOHKd9osize3" Name="Start" Kind="InputPin" />
+            <Pin Id="QzBOzqu8KS9MwiiLPxr0vq" Name="Stop" Kind="InputPin" />
+            <Pin Id="VmukvuBi2zZNKZZGtn0oAw" Name="Changed" Kind="OutputPin" />
+            <Pin Id="CZcDD7BAnPVMmBbLrpkFR4" Name="Created" Kind="OutputPin" />
+            <Pin Id="D1WwvvaKzyoNa6gEKFelJR" Name="Deleted" Kind="OutputPin" />
+            <Pin Id="DCZcr9spLa5OaD1YWUaevh" Name="Renamed" Kind="OutputPin" />
+            <Pin Id="BYE9jpwaJoeNXQggl5fMNY" Name="Errors" Kind="OutputPin" />
+          </Node>
+          <Pad Id="LjHNOwtcs0NM7cIiBy9j6J" Comment="Path" Bounds="125,151,35,15" ShowValueBox="true" isIOBox="true" Value="">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="QuhIZW0hBjKQIfrSdzBq2J" Comment="Filter" Bounds="198,187,35,15" ShowValueBox="true" isIOBox="true" Value="*.*">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OqEYmio4TlNNK7hZOHJ92R" Comment="Start" Bounds="272,223,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TS0lg4sjefkMeABs903ysL" Comment="Stop" Bounds="346,257,35,15" ShowValueBox="true" isIOBox="true" Value="False">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="Boolean" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KdBhr5SyGrVNENnh503EHg" Bounds="74,142,35,27" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RDke4Edww4rOLs9FnHF0p1" Bounds="148,179,35,27" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FDvsh32mMe9LKOnsBDkTtv" Bounds="223,216,35,27" ShowValueBox="true" isIOBox="true" Value="3.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="TDDygOJ0mnLNY6DLRvuVW6" Bounds="497,148,35,27" ShowValueBox="true" isIOBox="true" Value="1.">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="IfoHA4AnYXSMXelhcEWr4W" Bounds="529,149,244,37" ShowValueBox="true" isIOBox="true" Value="Set the path of the folder you wanna monitor">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GH90Ew1aSWpNoKOGC4uQsx" Bounds="498,205,35,27" ShowValueBox="true" isIOBox="true" Value="2.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KjiFi5SVmWELUYEFbvGRVS" Bounds="530,206,244,37" ShowValueBox="true" isIOBox="true" Value="You can apply a filter here to monitor specific files">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AQ0rayuZbtWLkCiHIPp1y4" Bounds="498,255,35,27" ShowValueBox="true" isIOBox="true" Value="3.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ASLbiJlhS5RLaixDqhJ9Ls" Bounds="530,256,244,37" ShowValueBox="true" isIOBox="true" Value="When you're good, bang the Start pin to start monitoring your folder">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FfYpk6xZg2uO8t15EKF9MX" Comment="Changed" Bounds="125,389,20,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="HSO1bX7tLm4LgcKgfakHip" Bounds="74,379,35,27" ShowValueBox="true" isIOBox="true" Value="4.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DVb0qICAEKxMla5eKPpbFy" Comment="Created" Bounds="180,414,20,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="V4PfmXdwkaDML8su0h00Hl" Comment="Deleted" Bounds="235,437,20,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="O8c94GAVoOkNZsXiyE5xEr" Comment="Renamed" Bounds="291,457,20,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IsA1euQFMYqMf79972xQsG" Comment="Errors" Bounds="346,479,20,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="G97EIgI0DzEMqB9ykPLBbr" Bounds="498,375,35,27" ShowValueBox="true" isIOBox="true" Value="4.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">13</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="DnCyjJ42bWSPKUZ4NP0row" Bounds="530,376,244,37" ShowValueBox="true" isIOBox="true" Value="When you're good, bang the Start pin to start monitoring your folder">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
         <Patch Id="Oh06H0A4ztVN8ZS8Cq0yCO" Name="Create" />
         <Patch Id="CtsLQLsW0RtP6NkvJtldpM" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="L0g861yIRylPXCfHVKBWEZ">
           <Fragment Id="Vmn6dBRV99NO59wngXa9ZZ" Patch="Oh06H0A4ztVN8ZS8Cq0yCO" Enabled="true" />
           <Fragment Id="EbzF7zLzTdDOEykmNIWVfp" Patch="CtsLQLsW0RtP6NkvJtldpM" Enabled="true" />
         </ProcessDefinition>
+        <Link Id="ULgayO1UeSGLXY9pmbrQfO" Ids="LjHNOwtcs0NM7cIiBy9j6J,HNKI3PaCVGSLJtn6SMQR1p" />
+        <Link Id="AYXUjSBnW4KMqtRotWyaNH" Ids="QuhIZW0hBjKQIfrSdzBq2J,T8ceTIZt5GHM1OqFNIPypk" />
+        <Link Id="MELfIu8MYHbPgXjgIW3qCp" Ids="OqEYmio4TlNNK7hZOHJ92R,HxYzkhH737wOHKd9osize3" />
+        <Link Id="QgwgcDCuA5tLIn4sVOCXHn" Ids="TS0lg4sjefkMeABs903ysL,QzBOzqu8KS9MwiiLPxr0vq" />
+        <Link Id="CGjdiEhgdygLUNr0hWRn9e" Ids="VmukvuBi2zZNKZZGtn0oAw,FfYpk6xZg2uO8t15EKF9MX" />
+        <Link Id="MctJGj6IecDNGyzrnE2jt8" Ids="CZcDD7BAnPVMmBbLrpkFR4,DVb0qICAEKxMla5eKPpbFy" />
+        <Link Id="Ex1V2i0E8SVLuGRDEdqAAL" Ids="D1WwvvaKzyoNa6gEKFelJR,V4PfmXdwkaDML8su0h00Hl" />
+        <Link Id="KmzDVfkOxUBLNOA2fmxiXc" Ids="DCZcr9spLa5OaD1YWUaevh,O8c94GAVoOkNZsXiyE5xEr" />
+        <Link Id="UbiMH4zqAG2NJLbKFyIaZ0" Ids="BYE9jpwaJoeNXQggl5fMNY,IsA1euQFMYqMf79972xQsG" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="CCYGgbfjaOLN02DKoc1ELZ" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="CPOIz84fW2SNn0EvNhR2bW" Location="VL.FsNotify" Version="0.0.0.0" />
+  <PlatformDependency Id="VxBPisamAN4ON0q04kMOuz" Location="System.IO.FileSystem.Watcher" />
 </Document>

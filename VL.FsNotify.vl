@@ -2,7 +2,322 @@
 <Document xmlns:p="property" Id="G1izR7bLc6VPMDwi34OmU9" LanguageVersion="2020.1.3.147" Version="0.128">
   <NugetDependency Id="BkgglQoLvZQPZSSFeR5p4L" Location="VL.CoreLib" Version="2020.1.3" />
   <Patch Id="TEGGEwgRmJHNyKPcxFJrjj">
-    <Canvas Id="T9iST3NHNKtLIG9FNFCr3a" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <Canvas Id="T9iST3NHNKtLIG9FNFCr3a" DefaultCategory="IO.FileSystemWatcher" CanvasType="FullCategory">
+      <!--
+
+    ************************ FileSystemWatcher (Reactive) ************************
+
+-->
+      <Node Name="FileSystemWatcher (Reactive)" Bounds="350,321" Id="RaPjlIkGLNtNFUmXNSkmFK">
+        <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
+          <Choice Kind="ContainerDefinition" Name="Process" />
+        </p:NodeReference>
+        <Patch Id="GEexNkQ1qEPML1CXmgHQh0">
+          <Canvas Id="I5q6LIrpS9PPY5kwy4BgnT" CanvasType="Group">
+            <Node Bounds="285,86,467,600" Id="E9tLFe8rtuKLUEeE1ydVKp">
+              <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+                <Choice Kind="ProcessStatefulRegion" Name="Cache" />
+                <FullNameCategoryReference ID="Primitive" />
+              </p:NodeReference>
+              <Pin Id="FrhudQjEmFjMHB03cSb9Ri" Name="Force" Kind="InputPin" />
+              <Pin Id="LJzkbFwW292MmMIRMWnoni" Name="Dispose Cached Outputs" Kind="InputPin">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                  <Choice Kind="TypeFlag" Name="Boolean" />
+                </p:TypeAnnotation>
+              </Pin>
+              <Pin Id="L4XPe656JfeQdffOF9Hho5" Name="Has Changed" Kind="OutputPin" />
+              <Patch Id="AJCWB1Sk1syQUMETnUpDh6" ManuallySortedPins="true">
+                <Patch Id="B9k6PVuSGXpMX7aOUooWcg" Name="Create" ManuallySortedPins="true" />
+                <Patch Id="Uk6dqzVlWM5PkGWPJNcClV" Name="Then" ManuallySortedPins="true" />
+                <Node Bounds="297,161,156,26" Id="I6luS7nKBUwMq3BjRoELmB">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Changed" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="RKsOYjUibxqMgEmpKHUWUH" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DiWJ835QRJhMIvtTuUQ3Mh" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="RcG9VSprWNUM2c6py4CkHB" Name="Changed" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,200,178,26" Id="Sh6JBwgNPj6O0upzcWolma">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Created" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="QYGuG1hE639O2htHHuNudD" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="ULp8IbjIaZ7Lw3a58eZ7IP" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Aql0ZMxJkVWNVNUqqWWR5m" Name="Created" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,243,209,26" Id="CIiwYIgmSqCMiEUz5lLbi6">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Deleted" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="LvCMOzrupqRQE3VViviajR" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="IVDcOsr1gsdQS0XHwNQREZ" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Q9IeYy6bRe9QKFIj3r2QVJ" Name="Deleted" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,286,241,26" Id="CFK5CucrYygPv95pcZOAeg">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Renamed" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="V5nB4Ls1KxEM3zFXGaLp8F" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="KDEG0WDOQ6AOZIE1HMF2D6" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="J1BaD2lRD7lLajJy7KSfHd" Name="Renamed" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,111,156,26" Id="MS8lGxZSPhxP5INzbgJ52q">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" />
+                    <Choice Kind="OperationCallFlag" Name="Create" />
+                    <PinReference Kind="InputPin" Name="Filter" />
+                    <PinReference Kind="InputPin" Name="Path" />
+                  </p:NodeReference>
+                  <Pin Id="RxTq3Q9KW0RPH5P0yyrqh1" Name="Path" Kind="InputPin" />
+                  <Pin Id="Ob8QSQi5fpALKMK8o9zbyZ" Name="Filter" Kind="InputPin" />
+                  <Pin Id="GVUFqMudCX6NRZ4IG4JcSl" Name="Output" Kind="StateOutputPin" />
+                </Node>
+                <Node Bounds="297,330,272,26" Id="Jt2APPwvGPkOxgdPSf3Dbr">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="Errors" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="Jks6pJUiZ8SLPsdsVyXJUH" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="PF0dIpJo3sZO6QmjdysmMI" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Kt1ofJ2UsVgNLdzOggKTYe" Name="Errors" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,381,294,26" Id="NP1DS6jQUW5Nl54AqVUZYt">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="AttributeChanged" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="C88Bh9qvL5INg5lbnwAOzO" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Q5cFHvfk6uHPgCSAm4AxAi" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="D1XJ8FfaAuqPv8VCx8EgvF" Name="Attribute Changed" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,429,324,26" Id="M9hGAmNsZNMP2tr9Gm4r8T">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="CreationTimeChanged" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="Nml7kAb66QmOsfCrTvjeHR" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="Cs0xdIrcpMvPx5gCOHswwE" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="Pl1roBawWWjNPPwnls27Sq" Name="Creation Time Changed" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,477,353,26" Id="LrziUH3vIU5NBquLFwEyPv">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="LastAccessChanged" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="DH5tJ4QJdifPJsbXulFvhl" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="QpE4p9wm053MxzxFdf8K1I" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="QcSSawBfWWBLbcr95PkLuU" Name="Last Access Changed" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,524,378,26" Id="BRfAIQIq0RmQLlLgofBSYL">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="LastWriteChanged" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="LHUFTLhh235Ms9exhDJrwt" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="JiwmV1wWYIOOZpI5VR979r" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="NJlOANKiOuDOLhR4f7SJEY" Name="Last Write Changed" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,574,416,26" Id="A3r2TuHIcXZQNfKm4uoVwy">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SecurityChanged" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="FkiJrD2bfJvQC9eX797SXi" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="MXVJrgnnNnnPfFbFwmhnh0" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="J6OPKHKIp6SOcmEgHjAvdQ" Name="Security Changed" Kind="OutputPin" />
+                </Node>
+                <Node Bounds="297,617,443,26" Id="Ketqjm2q3qwMSA10evoPUW">
+                  <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <Choice Kind="OperationCallFlag" Name="SizeChanged" />
+                    <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+                  </p:NodeReference>
+                  <Pin Id="VieX2ShQgWkNw14GFlSFrW" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="DkH13LS336cOOBHjjA2uSm" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="EosOCw7QC8HNMGWpkBurdB" Name="Size Changed" Kind="OutputPin" />
+                </Node>
+              </Patch>
+              <ControlPoint Id="DyLiRBXSgHSLzSZUXPva2D" Bounds="299,93" Alignment="Top" />
+              <ControlPoint Id="KY8vFpygMifLkMHAsTpiQG" Bounds="450,93" Alignment="Top" />
+              <ControlPoint Id="OxUElb31JSkPb6gg846VSk" Bounds="299,680" Name="" Alignment="Bottom" />
+              <ControlPoint Id="A2oRFgKyBKEND3S4PrPitU" Bounds="450,680" Alignment="Bottom" />
+              <ControlPoint Id="I8uMTHhoQSALsXFGH2iuvt" Bounds="472,680" Alignment="Bottom" />
+              <ControlPoint Id="GL8PDqS40MpLYDcbLumEv8" Bounds="504,680" Alignment="Bottom" />
+              <ControlPoint Id="McshzyZ7j94QDzdjzfeOOm" Bounds="535,680" Alignment="Bottom" />
+              <ControlPoint Id="RgJUsf8YMpQNbKb7h9waMM" Bounds="566,680" Alignment="Bottom" />
+              <ControlPoint Id="IqoH2AB8VkNLTbAxf7weCW" Bounds="588,680" Alignment="Bottom" />
+              <ControlPoint Id="HNgC718S0VYNkLDpou1fyP" Bounds="618,680" Alignment="Bottom" />
+              <ControlPoint Id="ELOtv6gVkqxObWbuvGtyuP" Bounds="646,680" Alignment="Bottom" />
+              <ControlPoint Id="HU5Q6Z27swWNv5zA8EHKfo" Bounds="672,680" Alignment="Bottom" />
+              <ControlPoint Id="ONvN3baFMoLMOo4HTSCQK9" Bounds="710,680" Alignment="Bottom" />
+              <ControlPoint Id="TTTFIqo76atMYj0sGZeoqx" Bounds="737,680" Alignment="Bottom" />
+            </Node>
+            <ControlPoint Id="Q8FUkz83P3MLCGYQXjm3mF" Bounds="299,60" />
+            <ControlPoint Id="QGkxakD047SO8nsXKBOHMG" Bounds="450,62" />
+            <Node Bounds="846,77,156,26" Id="FA6iNG4arq8QHctAeXDRuI">
+              <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Dispose" />
+                <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="PG3kjfprC6ZL1667rvDCNr" Name="Input" Kind="StateInputPin" />
+              <Pin Id="I57qVeYoD3nP6QbdFvi4OL" Name="Output" Kind="StateOutputPin" />
+            </Node>
+            <ControlPoint Id="FvT9smv5i9PLtMvD82sytJ" Bounds="450,716" />
+            <ControlPoint Id="ThnrqIWj6Q5OcAAzMIJa1V" Bounds="472,739" />
+            <ControlPoint Id="CXLHBgvr06TOG6wsorWdux" Bounds="504,762" />
+            <ControlPoint Id="AHqjenlXxwyNemVqIFJYbW" Bounds="535,786" />
+            <ControlPoint Id="U3hlkOMAJnxP7FxrFwIUD6" Bounds="566,813" />
+            <Pad Id="K4Ba037Y1mpLzAN7UKHl3F" SlotId="CjX4wjpeSwZMdUZY8azVwy" Bounds="130,767" />
+            <Pad Id="ST1i7uwCpLRMkZ0N34livU" SlotId="CjX4wjpeSwZMdUZY8azVwy" Bounds="848,49" />
+            <Node Bounds="128,804,156,26" Id="Rig1HFQkceOOTYiXhmy4pp">
+              <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Start" />
+                <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="TMQfEHnudAxPUugThzvAmb" Name="Input" Kind="StateInputPin" />
+              <Pin Id="CoM2ElXuL0jLEuZ5p3KSw2" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="KQShs88do49LnClSbum5hu" Name="Apply" Kind="InputPin" />
+            </Node>
+            <ControlPoint Id="L2cPfMt9Z2gQdxHt4Tz4oC" Bounds="281,783" />
+            <Node Bounds="128,871,156,26" Id="V0znFZjKPSyNltpghN6ryL">
+              <p:NodeReference LastCategoryFullName="SJP.FsNotify.EnhancedObservableFileSystemWatcher" LastSymbolSource="SJP.FsNotify.dll">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Stop" />
+                <CategoryReference Kind="AssemblyCategory" Name="EnhancedObservableFileSystemWatcher" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="NL7bIgOfTKhLIEdR1nWnQJ" Name="Input" Kind="StateInputPin" />
+              <Pin Id="NcDTBoXX6HuPFAYDcWzS2f" Name="Output" Kind="StateOutputPin" />
+              <Pin Id="KJH2vSYBLM7NfjcATvu5wx" Name="Apply" Kind="InputPin" />
+            </Node>
+            <ControlPoint Id="V3PqtoXz96oQRIRIoTnh6O" Bounds="281,853" />
+            <ControlPoint Id="QrOJ7Xx0OueQFhJZzJL7XJ" Bounds="588,842" />
+            <ControlPoint Id="VKHivUXOeCaOgFlavH9orW" Bounds="619,870" />
+            <ControlPoint Id="OkfdDHKbAEjLomuhYEneu8" Bounds="647,893" />
+            <ControlPoint Id="RNshBZa19b0OWeL2RE1YDY" Bounds="673,916" />
+            <ControlPoint Id="TYFIBGmhwwJM7za9xWUH6a" Bounds="711,937" />
+            <ControlPoint Id="AiLZupRrRekO4IyDvbIF5K" Bounds="737,959" />
+          </Canvas>
+          <Patch Id="CHHNkfESO86LlTEI2vSots" Name="Create" />
+          <Patch Id="KZYBOnVcv5nLNGnaYTos4B" Name="Update" ManuallySortedPins="true">
+            <Pin Id="AtB9Jr6hp0ZLuoh2KangPu" Name="Path" Kind="InputPin" Bounds="406,211" />
+            <Pin Id="Jz2IPfN4rjuP5h2m5VY1Zm" Name="Filter" Kind="InputPin" Bounds="510,220" DefaultValue="*.*">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="LrxN9DFF1xVOmLGihSVnVx" Name="Changed" Kind="OutputPin" Bounds="495,468" />
+            <Pin Id="DWjGxQZTEIVNOoISj3jRvB" Name="Created" Kind="OutputPin" Bounds="643,482" />
+            <Pin Id="PmO9FW8YQU3MuZRhQrWwdf" Name="Deleted" Kind="OutputPin" Bounds="781,480" />
+            <Pin Id="FQNMnzZhDzBOQTtWgJs6LU" Name="Renamed" Kind="OutputPin" Bounds="926,472" />
+            <Pin Id="SMVVXB4UPdGOWWvxcEcMn7" Name="Errors" Kind="OutputPin" Bounds="1071,469" />
+            <Pin Id="ElkZKeJIOSpOIkJKo3rfsa" Name="Start" Kind="InputPin" Bounds="541,549" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="MX355HVYxVBPw6Ywvd3Osp" Name="Stop" Kind="InputPin" Bounds="624,618" DefaultValue="False">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pin>
+            <Pin Id="VEVSmwGzlByQd4rr3fwkKP" Name="Attribute Changed" Kind="OutputPin" Bounds="702,754" Visibility="Optional" />
+            <Pin Id="InuLW9nkEKdNbZv5lh1Z5n" Name="Creation Time Changed" Kind="OutputPin" Bounds="708,1045" Visibility="Optional" />
+            <Pin Id="JDYSZcPduTyLp4eBWKJTES" Name="Last Access Changed" Kind="OutputPin" Bounds="649,988" Visibility="Optional" />
+            <Pin Id="TdAC4wXyybTONBAHvSDcKk" Name="Last Write Changed" Kind="OutputPin" Bounds="681,1010" Visibility="Optional" />
+            <Pin Id="FOps86CtyxoPTKyKURvSFm" Name="Security Changed" Kind="OutputPin" Bounds="705,1032" Visibility="Optional" />
+            <Pin Id="J9FaESt0ujgMKZS9dpmAfc" Name="Size Changed" Kind="OutputPin" Bounds="727,1054" Visibility="Optional" />
+          </Patch>
+          <!--
+
+    ************************  ************************
+
+-->
+          <ProcessDefinition Id="SsCNmizpjEgNgdi85xeTVt">
+            <Fragment Id="GsqtzzZ2rw4PmmJXws9vqB" Patch="CHHNkfESO86LlTEI2vSots" Enabled="true" />
+            <Fragment Id="ERe5T5HhbBaNAuFLjC6jNf" Patch="KZYBOnVcv5nLNGnaYTos4B" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="DtHYn6h6NWEPN0jPrPDVvM" Ids="Q8FUkz83P3MLCGYQXjm3mF,DyLiRBXSgHSLzSZUXPva2D" />
+          <Link Id="Valy7SVMZvNLlzIo6t5bX3" Ids="AtB9Jr6hp0ZLuoh2KangPu,Q8FUkz83P3MLCGYQXjm3mF" IsHidden="true" />
+          <Link Id="EYFC2B3vZSpNOaukuZUihU" Ids="QGkxakD047SO8nsXKBOHMG,KY8vFpygMifLkMHAsTpiQG" />
+          <Link Id="HfEBl89n8KQNCFYbsLE14H" Ids="Jz2IPfN4rjuP5h2m5VY1Zm,QGkxakD047SO8nsXKBOHMG" IsHidden="true" />
+          <Patch Id="OgkSjgGgy3JNzdNeP0aVPx" Name="Dispose" ParticipatingElements="FA6iNG4arq8QHctAeXDRuI" />
+          <Link Id="OvnVPB8qALTO8297NsOndy" Ids="DiWJ835QRJhMIvtTuUQ3Mh,QYGuG1hE639O2htHHuNudD" />
+          <Link Id="E1GgUnVkh7sPG6yGqKs6wd" Ids="ULp8IbjIaZ7Lw3a58eZ7IP,LvCMOzrupqRQE3VViviajR" />
+          <Link Id="LPUie3zDeMuQGtAu87xfEO" Ids="IVDcOsr1gsdQS0XHwNQREZ,V5nB4Ls1KxEM3zFXGaLp8F" />
+          <Link Id="I0iYG3UfZYkOHJmyUUGr44" Ids="KDEG0WDOQ6AOZIE1HMF2D6,Jks6pJUiZ8SLPsdsVyXJUH" />
+          <Link Id="BaFfZX52MBfMCHjXmRsdYl" Ids="RcG9VSprWNUM2c6py4CkHB,A2oRFgKyBKEND3S4PrPitU" />
+          <Link Id="GkFpkHnTVa3PR6LRNMPAjP" Ids="A2oRFgKyBKEND3S4PrPitU,FvT9smv5i9PLtMvD82sytJ" />
+          <Link Id="MUcxkJTb0LZNJmRORQlFdq" Ids="FvT9smv5i9PLtMvD82sytJ,LrxN9DFF1xVOmLGihSVnVx" IsHidden="true" />
+          <Link Id="LgJNC6KBhOMM6wotwNrDaq" Ids="Aql0ZMxJkVWNVNUqqWWR5m,I8uMTHhoQSALsXFGH2iuvt" />
+          <Link Id="Dp6wFb38EslPMfI6FoGoGG" Ids="I8uMTHhoQSALsXFGH2iuvt,ThnrqIWj6Q5OcAAzMIJa1V" />
+          <Link Id="ALHlvjOT5A2QE8jJEkWwcM" Ids="ThnrqIWj6Q5OcAAzMIJa1V,DWjGxQZTEIVNOoISj3jRvB" IsHidden="true" />
+          <Link Id="IAkxXR7XFdXOjkjcNGg5OT" Ids="Q9IeYy6bRe9QKFIj3r2QVJ,GL8PDqS40MpLYDcbLumEv8" />
+          <Link Id="Gqu9Ypca1lpQdUBnyIzsYh" Ids="GL8PDqS40MpLYDcbLumEv8,CXLHBgvr06TOG6wsorWdux" />
+          <Link Id="FXcBZ54APtJOVu91C83GrA" Ids="CXLHBgvr06TOG6wsorWdux,PmO9FW8YQU3MuZRhQrWwdf" IsHidden="true" />
+          <Link Id="RcXt8GbPZcrMpRoGp8ZqAK" Ids="J1BaD2lRD7lLajJy7KSfHd,McshzyZ7j94QDzdjzfeOOm" />
+          <Link Id="Bivqwq481MvLZFVpZo3aGp" Ids="McshzyZ7j94QDzdjzfeOOm,AHqjenlXxwyNemVqIFJYbW" />
+          <Link Id="O1SixFpd1VaOOfgmlHRmWn" Ids="AHqjenlXxwyNemVqIFJYbW,FQNMnzZhDzBOQTtWgJs6LU" IsHidden="true" />
+          <Link Id="Vssj9Xj7NDfPqZOLb2D64c" Ids="Kt1ofJ2UsVgNLdzOggKTYe,RgJUsf8YMpQNbKb7h9waMM" />
+          <Link Id="GZKQdPASJNvL66fzJucnQD" Ids="RgJUsf8YMpQNbKb7h9waMM,U3hlkOMAJnxP7FxrFwIUD6" />
+          <Link Id="Qn4rHTMgeJENim4t4vJoOC" Ids="U3hlkOMAJnxP7FxrFwIUD6,SMVVXB4UPdGOWWvxcEcMn7" IsHidden="true" />
+          <Link Id="QYdH6auTVcdPEaO6AQWGh5" Ids="OxUElb31JSkPb6gg846VSk,K4Ba037Y1mpLzAN7UKHl3F" />
+          <Slot Id="CjX4wjpeSwZMdUZY8azVwy" Name="Watcher" />
+          <Link Id="OnjcV2EcGNxLS4Dve0VgnQ" Ids="ST1i7uwCpLRMkZ0N34livU,PG3kjfprC6ZL1667rvDCNr" />
+          <Link Id="HDBsuin9uTyLF1Vc6ykfW4" Ids="L2cPfMt9Z2gQdxHt4Tz4oC,KQShs88do49LnClSbum5hu" />
+          <Link Id="J7HCybWKqm7L8vdzCEyHoT" Ids="ElkZKeJIOSpOIkJKo3rfsa,L2cPfMt9Z2gQdxHt4Tz4oC" IsHidden="true" />
+          <Link Id="KkpD3tTpInxQBIvfpaDvcL" Ids="K4Ba037Y1mpLzAN7UKHl3F,TMQfEHnudAxPUugThzvAmb" />
+          <Link Id="NnW3qWIztWcLeqviqLHygX" Ids="V3PqtoXz96oQRIRIoTnh6O,KJH2vSYBLM7NfjcATvu5wx" />
+          <Link Id="L7gWUGro00pQLp1Ckcisgb" Ids="MX355HVYxVBPw6Ywvd3Osp,V3PqtoXz96oQRIRIoTnh6O" IsHidden="true" />
+          <Link Id="BzWf6lIQM0mLgxkIyFeT6v" Ids="CoM2ElXuL0jLEuZ5p3KSw2,NL7bIgOfTKhLIEdR1nWnQJ" />
+          <Link Id="AjQyDGRzR8GLLhglZbCwWB" Ids="DyLiRBXSgHSLzSZUXPva2D,RxTq3Q9KW0RPH5P0yyrqh1" />
+          <Link Id="QwvluMc0mlcLVNxdfa6rJ6" Ids="KY8vFpygMifLkMHAsTpiQG,Ob8QSQi5fpALKMK8o9zbyZ" />
+          <Link Id="GkmCZHffNXxOIDMMtnYXzK" Ids="GVUFqMudCX6NRZ4IG4JcSl,RKsOYjUibxqMgEmpKHUWUH" />
+          <Link Id="AhttKelhKv9LBp3LW0YGln" Ids="PF0dIpJo3sZO6QmjdysmMI,C88Bh9qvL5INg5lbnwAOzO" />
+          <Link Id="GDmwQxa0lP2MgZgolRMB4q" Ids="D1XJ8FfaAuqPv8VCx8EgvF,IqoH2AB8VkNLTbAxf7weCW" />
+          <Link Id="QSB7rpQUKGvPIE0JC2Xsub" Ids="IqoH2AB8VkNLTbAxf7weCW,QrOJ7Xx0OueQFhJZzJL7XJ" />
+          <Link Id="Jk5xkROL97gNzC1DK9MtXe" Ids="QrOJ7Xx0OueQFhJZzJL7XJ,VEVSmwGzlByQd4rr3fwkKP" IsHidden="true" />
+          <Link Id="GNGFtJLFinePlxGWY3SeKy" Ids="Q5cFHvfk6uHPgCSAm4AxAi,Nml7kAb66QmOsfCrTvjeHR" />
+          <Link Id="CriS1KvhDy7PKGHFhqkXi6" Ids="Pl1roBawWWjNPPwnls27Sq,HNgC718S0VYNkLDpou1fyP" />
+          <Link Id="AUkMljAerPEMMS36dQonH0" Ids="HNgC718S0VYNkLDpou1fyP,VKHivUXOeCaOgFlavH9orW" />
+          <Link Id="JIuqSSdM78hOh0VeDJbziy" Ids="VKHivUXOeCaOgFlavH9orW,InuLW9nkEKdNbZv5lh1Z5n" IsHidden="true" />
+          <Link Id="H4u4pZPPVJoNSfGUc8IW9G" Ids="Cs0xdIrcpMvPx5gCOHswwE,DH5tJ4QJdifPJsbXulFvhl" />
+          <Link Id="CNplHnPn0eUMI0JcyoMa8f" Ids="QcSSawBfWWBLbcr95PkLuU,ELOtv6gVkqxObWbuvGtyuP" />
+          <Link Id="UzHttzjGWfJOJTTObAIvU6" Ids="ELOtv6gVkqxObWbuvGtyuP,OkfdDHKbAEjLomuhYEneu8" />
+          <Link Id="Op6CAHXiEsWOOB63lCBhoN" Ids="OkfdDHKbAEjLomuhYEneu8,JDYSZcPduTyLp4eBWKJTES" IsHidden="true" />
+          <Link Id="FZN7JNH1nPdOQF8e2HygvM" Ids="QpE4p9wm053MxzxFdf8K1I,LHUFTLhh235Ms9exhDJrwt" />
+          <Link Id="TXy4emMHGk0NqJ1zBpJDj7" Ids="NJlOANKiOuDOLhR4f7SJEY,HU5Q6Z27swWNv5zA8EHKfo" />
+          <Link Id="CptwcNbvmVEQPKjZIZRKG1" Ids="HU5Q6Z27swWNv5zA8EHKfo,RNshBZa19b0OWeL2RE1YDY" />
+          <Link Id="IR1fYWQNUfXPuQWgDlcJu8" Ids="RNshBZa19b0OWeL2RE1YDY,TdAC4wXyybTONBAHvSDcKk" IsHidden="true" />
+          <Link Id="ULTxMFdWbDcPA6kuOy7bq1" Ids="JiwmV1wWYIOOZpI5VR979r,FkiJrD2bfJvQC9eX797SXi" />
+          <Link Id="PQTjUSEQPIcNAzUbgXXq7T" Ids="J6OPKHKIp6SOcmEgHjAvdQ,ONvN3baFMoLMOo4HTSCQK9" />
+          <Link Id="LBrWC1LZgUsOp8XYQWiEze" Ids="ONvN3baFMoLMOo4HTSCQK9,TYFIBGmhwwJM7za9xWUH6a" />
+          <Link Id="TfzOvlGTRp0LNWnEd6fUO3" Ids="TYFIBGmhwwJM7za9xWUH6a,FOps86CtyxoPTKyKURvSFm" IsHidden="true" />
+          <Link Id="JFoNaOE1xTQNNwWzhXJdl3" Ids="MXVJrgnnNnnPfFbFwmhnh0,VieX2ShQgWkNw14GFlSFrW" />
+          <Link Id="DzXvIqZGBXTLRJoc2wN3pV" Ids="DkH13LS336cOOBHjjA2uSm,OxUElb31JSkPb6gg846VSk" />
+          <Link Id="H0pESUzg1BGLlgHgdr7bDF" Ids="EosOCw7QC8HNMGWpkBurdB,TTTFIqo76atMYj0sGZeoqx" />
+          <Link Id="BXRJdGmX0LpN2UUQPh3GHp" Ids="TTTFIqo76atMYj0sGZeoqx,AiLZupRrRekO4IyDvbIF5K" />
+          <Link Id="HTlc14jggBeLrdDzMySxS2" Ids="AiLZupRrRekO4IyDvbIF5K,J9FaESt0ujgMKZS9dpmAfc" IsHidden="true" />
+        </Patch>
+      </Node>
+    </Canvas>
     <!--
 
     ************************ Application ************************
@@ -17,11 +332,6 @@
         <Canvas Id="FIhqmocXEG9OJvzdWLcUyN" CanvasType="Group" />
         <Patch Id="QcxxI7WZ5wEMHManX6WYom" Name="Create" />
         <Patch Id="LQSOrrIfGRqOWDdx5PYVzZ" Name="Update" />
-        <!--
-
-    ************************  ************************
-
--->
         <ProcessDefinition Id="JRr2R258TgQM7LUv5Exxz3">
           <Fragment Id="InipPIHO3NLMIUxgXrGsPG" Patch="QcxxI7WZ5wEMHManX6WYom" Enabled="true" />
           <Fragment Id="RkQBaDn1NoCN9zzZqKBXCf" Patch="LQSOrrIfGRqOWDdx5PYVzZ" Enabled="true" />
@@ -30,4 +340,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="DmoEFhYbjpJPp9Q8r1DVIm" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="JIteejeRa3cMg9ilW7pSIs" Location="SJP.FsNotify" Version="1.0.0" />
 </Document>
