@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>VL.FsNotify</id>
+	<version>1.0.0</version>
+    <title>VL.FsNotify</title>
+    <authors>sebescudie</authors>
+    <owners>sebescudie</owners>
+    <projectUrl>https://github.com/sebescudie/VL.FsNotify/</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <summary>Convenience node to retrieve file system events as observables</summary>
+    <description>Convenience node to retrieve file system events as observables</description>
+    <tags>VL, file, filesystem, watcher, monitor</tags>
+    <license type="expression">MIT</license>
+	<dependencies>
+        <dependency id="SJP.FsNotify" version="1.0.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\*.vl" target="" exclude="" />
+    <file src="..\help\**" target="help\" exclude="" />
+  </files>
+</package>
