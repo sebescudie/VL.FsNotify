@@ -8,7 +8,7 @@
     ************************ FileSystemWatcher (Reactive) ************************
 
 -->
-      <Node Name="FileSystemWatcher (Reactive)" Bounds="350,321" Id="RaPjlIkGLNtNFUmXNSkmFK">
+      <Node Name="FileSystemWatcher (Reactive)" Bounds="350,321" Id="RaPjlIkGLNtNFUmXNSkmFK" Summary="Provides quick access to file system events via observables">
         <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="builtin">
           <Choice Kind="ContainerDefinition" Name="Process" />
         </p:NodeReference>
@@ -216,40 +216,35 @@
             <ControlPoint Id="AiLZupRrRekO4IyDvbIF5K" Bounds="737,959" />
           </Canvas>
           <Patch Id="CHHNkfESO86LlTEI2vSots" Name="Create" />
-          <Patch Id="KZYBOnVcv5nLNGnaYTos4B" Name="Update" ManuallySortedPins="true">
-            <Pin Id="AtB9Jr6hp0ZLuoh2KangPu" Name="Path" Kind="InputPin" Bounds="406,211" />
-            <Pin Id="Jz2IPfN4rjuP5h2m5VY1Zm" Name="Filter" Kind="InputPin" Bounds="510,220" DefaultValue="*.*">
+          <Patch Id="KZYBOnVcv5nLNGnaYTos4B" Summary="Provides quick access to file system events via observables" Name="Update" ManuallySortedPins="true">
+            <Pin Id="AtB9Jr6hp0ZLuoh2KangPu" Name="Path" Kind="InputPin" Bounds="406,211" Summary="The folder to monitor" />
+            <Pin Id="Jz2IPfN4rjuP5h2m5VY1Zm" Name="Filter" Kind="InputPin" Bounds="510,220" DefaultValue="*.*" Summary="Filters the files in the folder">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="String" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="LrxN9DFF1xVOmLGihSVnVx" Name="Changed" Kind="OutputPin" Bounds="495,468" />
-            <Pin Id="DWjGxQZTEIVNOoISj3jRvB" Name="Created" Kind="OutputPin" Bounds="643,482" />
-            <Pin Id="PmO9FW8YQU3MuZRhQrWwdf" Name="Deleted" Kind="OutputPin" Bounds="781,480" />
-            <Pin Id="FQNMnzZhDzBOQTtWgJs6LU" Name="Renamed" Kind="OutputPin" Bounds="926,472" />
-            <Pin Id="SMVVXB4UPdGOWWvxcEcMn7" Name="Errors" Kind="OutputPin" Bounds="1071,469" />
-            <Pin Id="ElkZKeJIOSpOIkJKo3rfsa" Name="Start" Kind="InputPin" Bounds="541,549" DefaultValue="False">
+            <Pin Id="LrxN9DFF1xVOmLGihSVnVx" Name="Changed" Kind="OutputPin" Bounds="495,468" Summary="Fires when a file has changed" />
+            <Pin Id="DWjGxQZTEIVNOoISj3jRvB" Name="Created" Kind="OutputPin" Bounds="643,482" Summary="Fires when a file has been created" />
+            <Pin Id="PmO9FW8YQU3MuZRhQrWwdf" Name="Deleted" Kind="OutputPin" Bounds="781,480" Summary="Fires when a file has been deleted" />
+            <Pin Id="FQNMnzZhDzBOQTtWgJs6LU" Name="Renamed" Kind="OutputPin" Bounds="926,472" Summary="Fires when a file has been renamed" />
+            <Pin Id="SMVVXB4UPdGOWWvxcEcMn7" Name="Errors" Kind="OutputPin" Bounds="1071,469" Summary="Fires when an exception occurs" />
+            <Pin Id="ElkZKeJIOSpOIkJKo3rfsa" Name="Start" Kind="InputPin" Bounds="541,549" DefaultValue="False" Summary="Bang to start monitoring the folder">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="MX355HVYxVBPw6Ywvd3Osp" Name="Stop" Kind="InputPin" Bounds="624,618" DefaultValue="False">
+            <Pin Id="MX355HVYxVBPw6Ywvd3Osp" Name="Stop" Kind="InputPin" Bounds="624,618" DefaultValue="False" Summary="Bang to stop monitoring the folder">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="VEVSmwGzlByQd4rr3fwkKP" Name="Attribute Changed" Kind="OutputPin" Bounds="702,754" Visibility="Optional" />
-            <Pin Id="InuLW9nkEKdNbZv5lh1Z5n" Name="Creation Time Changed" Kind="OutputPin" Bounds="708,1045" Visibility="Optional" />
-            <Pin Id="JDYSZcPduTyLp4eBWKJTES" Name="Last Access Changed" Kind="OutputPin" Bounds="649,988" Visibility="Optional" />
-            <Pin Id="TdAC4wXyybTONBAHvSDcKk" Name="Last Write Changed" Kind="OutputPin" Bounds="681,1010" Visibility="Optional" />
-            <Pin Id="FOps86CtyxoPTKyKURvSFm" Name="Security Changed" Kind="OutputPin" Bounds="705,1032" Visibility="Optional" />
-            <Pin Id="J9FaESt0ujgMKZS9dpmAfc" Name="Size Changed" Kind="OutputPin" Bounds="727,1054" Visibility="Optional" />
+            <Pin Id="VEVSmwGzlByQd4rr3fwkKP" Name="Attribute Changed" Kind="OutputPin" Bounds="702,754" Visibility="Optional" Summary="Fires when a file attributes changed" />
+            <Pin Id="InuLW9nkEKdNbZv5lh1Z5n" Name="Creation Time Changed" Kind="OutputPin" Bounds="708,1045" Visibility="Optional" Summary="Fires when a file has its creation time changed" />
+            <Pin Id="JDYSZcPduTyLp4eBWKJTES" Name="Last Access Changed" Kind="OutputPin" Bounds="649,988" Visibility="Optional" Summary="Fires when a file has its last access time changed" />
+            <Pin Id="TdAC4wXyybTONBAHvSDcKk" Name="Last Write Changed" Kind="OutputPin" Bounds="681,1010" Visibility="Optional" Summary="Fires when a file has its last write attribute changed" />
+            <Pin Id="FOps86CtyxoPTKyKURvSFm" Name="Security Changed" Kind="OutputPin" Bounds="705,1032" Visibility="Optional" Summary="Fires when a files has its security properties changed" />
+            <Pin Id="J9FaESt0ujgMKZS9dpmAfc" Name="Size Changed" Kind="OutputPin" Bounds="727,1054" Visibility="Optional" Summary="Fires when a file has its size changed" />
           </Patch>
-          <!--
-
-    ************************  ************************
-
--->
           <ProcessDefinition Id="SsCNmizpjEgNgdi85xeTVt">
             <Fragment Id="GsqtzzZ2rw4PmmJXws9vqB" Patch="CHHNkfESO86LlTEI2vSots" Enabled="true" />
             <Fragment Id="ERe5T5HhbBaNAuFLjC6jNf" Patch="KZYBOnVcv5nLNGnaYTos4B" Enabled="true" />
